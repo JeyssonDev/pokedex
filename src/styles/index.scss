@@ -1,0 +1,43 @@
+$negro: rgb(18, 17, 17);
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(224, 224, 224);
+    overflow-x: hidden;
+}
+
+img,
+button {
+    cursor: pointer;
+}
+
+input,
+button {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px 2px rgba(0, 0, 0, 0.395);
+}
+
+input {
+    height: 2.5rem;
+}
+
+button {
+    background-color: $negro;
+    border: 3px solid $negro;
+    color: white;
+    &:hover {
+        background-color: white;
+        color: $negro;
+    }
+}
+
+@import 'navbar';
+@import 'list';
+@import 'detail';
+@import 'types';
